@@ -29,6 +29,7 @@
     "fs-extra": "*",
     "gulp-clean-css": "*",
     "gulp-rename": "*",
+    "gulp-replace": "*",
     "gulp-w3cjs": "*",
     "browser-sync": "*"
   }

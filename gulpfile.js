@@ -20,6 +20,7 @@ const gulp = require('gulp'),
     sass = require('gulp-sass'),
     cleanCSS = require('gulp-clean-css'),
     concat = require('gulp-concat'),
+    replace = require('gulp-replace');
     sourcemaps = require('gulp-sourcemaps'),
     fs = require('fs-extra'),
     rename = require("gulp-rename"),
@@ -76,9 +77,12 @@ gulp.task('build-css', function () {
 
 gulp.task('minify-css', function () {
     gulp.src(output.sourcestylesheets + '/*.css')
-        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(cleanCSS({compatibility: 'ie9'}))
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest(output.stylesheets))
+        .pipe(gulp.dest(output.stylesheets));
+    gulp.src(output.html+'/*.html')
+        .pipe(replace('main.css', 'main.min.css'))
+        .pipe(gulp.dest(output.html));
 });
 
 gulp.task('build-js', function () {
