@@ -50,6 +50,9 @@ gulp.task('default', ['watch']);
 
 gulp.task('init', ['copy-html', 'build-css', 'build-js', 'image-opt', 'copy-fonts']);
 
+gulp.task('build', ['copy-html', 'build-css', 'build-js', 'image-opt', 'copy-fonts', 'minify-css']);
+
+
 gulp.task('watch', function () {
     gulp.start('serve');
     gulp.watch(input.javascript, ['jshint', 'build-js']);
