@@ -8,6 +8,10 @@
   font-weight: bold;
   src: url("../fonts/Roboto-Bold.ttf"); }
 
+*{
+  -webkit-tap-highlight-color: transparent !important;
+}
+
 .background {
   background-color: #1e1e1e; }
 
