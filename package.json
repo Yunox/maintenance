@@ -1,0 +1,35 @@
+{
+  "name": "maintenance-page",
+  "version": "1.0.0",
+  "description": "Need a quick page? Take this!",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wasnlosdu/maintenance.git"
+  },
+  "author": "Johannes Konze",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/wasnlosdu/gitting-started/maintenance"
+  },
+  "devDependencies": {
+    "jshint-stylish": "*",
+    "jshint": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-concat": "*",
+    "gulp": "*",
+    "gulp-cli": "*",
+    "gulp-jshint": "*",
+    "gulp-sass": "*",
+    "gulp-util": "*",
+    "gulp-image": "*",
+    "fs-extra": "*",
+    "gulp-clean-css": "*",
+    "gulp-rename": "*",
+    "gulp-w3cjs": "*",
+    "browser-sync": "*"
+  }
+}

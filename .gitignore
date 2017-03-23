@@ -83,3 +83,13 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+node_modules
+
+
+public/*
+!public/assets/
+public/assets/*
+!public/assets/javascript/
+public/assets/javascript/*
+!public/assets/javascript/lib/
